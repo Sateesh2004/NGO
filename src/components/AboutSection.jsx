@@ -3,7 +3,7 @@ import React from 'react';
 import { CheckCircle2 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
-
+import { motion } from "motion/react"
 const AboutSection = () => {
   return (
     <section className="">
@@ -14,11 +14,25 @@ const AboutSection = () => {
       <p className="max-w-3xl mx-auto mt-4 text-xl text-center ">Best NGO in Delhi</p>
     </div>
     <div className="grid gap-4 lg:gap-8 lg:grid-cols-2 lg:items-center ">
-    <div aria-hidden="true" className="mt-10 lg:mt-0 ">
+    <motion.div initial={{ x: -700,}}
+        whileInView={{ x: 0, }} 
+        transition={{ delay: 0.2, duration: 1.5, type: 'spring', stiffness: 50 }} // Smooth spring animation
+  aria-hidden="true" className="mt-10 lg:mt-0 ">
      <Image src="/girl.webp" height={500} width={500} alt="Girl"/>
-      </div>
-      <div>
-        <div className='text-justify leading-[35px] shadow-lg px-10 py-6 shadow-black  font-bold'>
+      </motion.div>
+      <motion.div
+      initial={{ x:740,}}
+      whileInView={{ x: 0, }} 
+      transition={{ delay: 0.2, duration: 1.5, type: 'spring', stiffness: 50 }} // Smooth spring animation
+      aria-hidden="true"
+
+      
+      
+      
+      
+      
+      >
+        <div className='text-justify leading-[35px] text-[#666666] shadow-lg px-10 py-6 shadow-black  font-bold'>
         "सर्व प्रयास सामाजिक संस्था" की शुरुआत 14 जनवरी 2022 को हुई थी, जिसका मुख्य उद्देश्य समाज में गरीब, जरूरतमंद और वंचित वर्ग के लोगों के लिए कार्य करना है। विशेष रूप से संस्था महिला सशक्तिकरण, पर्यावरण संरक्षण और बिना माता-पिता के गरीब एवं जरूरतमंद बालिकाओं के पालन-पोषण के क्षेत्र में सक्रिय है। 
 
 इस संस्था ने यह जिम्मेदारी ली है कि वह ऐसी बालिकाओं को शिक्षा, पोषण, और देखभाल प्रदान करेगी, जो किसी कारणवश अपने माता-पिता से वंचित हैं। इन बालिकाओं को न केवल गुणवत्तापूर्ण शिक्षा दी जाती है, बल्कि उनका संपूर्ण पालन-पोषण, जैसे स्वास्थ्य, मानसिक और शारीरिक विकास, भी संस्था द्वारा किया जाता है। संस्था द्वारा बालिकाओं की शादी तक सभी आवश्यक खर्चों का ध्यान रखा जाता है, ताकि वे एक सुरक्षित और सशक्त जीवन जी सकें। 
@@ -27,12 +41,26 @@ const AboutSection = () => {
 
 सर्व प्रयास सामाजिक संस्था समाज में सकारात्मक बदलाव लाने के लिए निरंतर प्रयासरत है और इसका उद्देश्य समाज के हर वर्ग तक मदद पहुँचाना है।"
         </div>
-      </div>
+      </motion.div>
      
       
     </div>
   </div>
   
+  
+
+{/* <motion.h2 
+        initial={{ x: -20, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }} 
+        transition={{ delay: 0.2 }}
+        className="text-2xl font-bold text-green-600 mb-4"
+      >
+        Support Our Mission
+      </motion.h2> */}
+
+
+
+
   
 </section>
 

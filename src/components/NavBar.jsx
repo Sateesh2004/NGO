@@ -108,7 +108,7 @@ const NavBar = () => {
 
 
       <div className="   px-5   ">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-2">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center">

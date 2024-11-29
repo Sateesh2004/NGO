@@ -190,6 +190,16 @@ const Footer = () => {
           </p>
         </div>
       </div>
+
+
+      {/* <motion.h2 
+        initial={{ x: -20, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }} 
+        transition={{ delay: 0.2 }}
+        className="text-2xl font-bold text-green-600 mb-4"
+      >
+        Support Our Mission
+      </motion.h2> */}
     </footer>
   );
 };
