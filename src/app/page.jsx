@@ -12,7 +12,7 @@ export default function Home() {
     <div>
     
       <Slider/>
-      <CounterSection/>
+      {/* <CounterSection/> */}
       <AboutSection/>
     </div>
   );
