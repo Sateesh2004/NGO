@@ -3,8 +3,6 @@ import React from 'react';
 import { CheckCircle2 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Fade } from "react-awesome-reveal";
-import { keyframes } from "@emotion/react";
 
 const AboutSection = () => {
   return (
@@ -16,12 +14,9 @@ const AboutSection = () => {
       <p className="max-w-3xl mx-auto mt-4 text-xl text-center ">Best NGO in Delhi</p>
     </div>
     <div className="grid gap-4 lg:gap-8 lg:grid-cols-2 lg:items-center ">
-      <Fade direction='left' triggerOnce>
     <div aria-hidden="true" className="mt-10 lg:mt-0 ">
      <Image src="/girl.webp" height={500} width={500} alt="Girl"/>
       </div>
-      </Fade>
-      <Fade direction='right' triggerOnce>
       <div>
         <div className='text-justify leading-[35px] shadow-lg px-10 py-6 shadow-black  font-bold'>
         "सर्व प्रयास सामाजिक संस्था" की शुरुआत 14 जनवरी 2022 को हुई थी, जिसका मुख्य उद्देश्य समाज में गरीब, जरूरतमंद और वंचित वर्ग के लोगों के लिए कार्य करना है। विशेष रूप से संस्था महिला सशक्तिकरण, पर्यावरण संरक्षण और बिना माता-पिता के गरीब एवं जरूरतमंद बालिकाओं के पालन-पोषण के क्षेत्र में सक्रिय है। 
@@ -33,7 +28,7 @@ const AboutSection = () => {
 सर्व प्रयास सामाजिक संस्था समाज में सकारात्मक बदलाव लाने के लिए निरंतर प्रयासरत है और इसका उद्देश्य समाज के हर वर्ग तक मदद पहुँचाना है।"
         </div>
       </div>
-      </Fade>
+     
       
     </div>
   </div>
