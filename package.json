@@ -15,8 +15,7 @@
     "react": "19.0.0-rc-66855b96-20241106",
     
     "react-dom": "19.0.0-rc-66855b96-20241106",
-    "react-simple-image-slider": "^2.4.1",
-    "react-slideshow-image": "^4.3.2"
+    
   },
   "devDependencies": {
     "postcss": "^8",

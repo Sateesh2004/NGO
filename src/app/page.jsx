@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
     
-      <Slider/>
+      {/* <Slider/> */}
       {/* <CounterSection/> */}
       <AboutSection/>
     </div>
