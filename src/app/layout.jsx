@@ -3,7 +3,6 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import NextTopLoader from 'nextjs-toploader';
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -26,12 +25,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NextTopLoader 
-        color="#4CAF50"
-        showSpinner={false}
         
-        
-        />
         <Header/>
         <NavBar/>
         {children}
