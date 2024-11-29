@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 import { Menu, X, Heart } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from "motion/react"
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const [isDonationPopupOpen, setIsDonationPopupOpen] = useState(false);
@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
 
-<AnimatePresence>
+
 
 {isDonationPopupOpen&&
 (  
@@ -102,7 +102,7 @@ const Footer = () => {
 )
   
 }
-</AnimatePresence>
+
       <div className="container mx-auto px-4 py-16">
         {/* Top Section */}
         <div className="grid md:grid-cols-4 gap-8 mb-12">

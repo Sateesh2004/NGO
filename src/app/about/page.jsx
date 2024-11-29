@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { Playfair_Display,Roboto,Poppins } from 'next/font/google'
 import Link from 'next/link';
 import { useState } from 'react';
-import { motion,AnimatePresence } from 'framer-motion';
+import { motion } from "motion/react"
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -28,7 +28,7 @@ const AboutUs = () => {
 
   return (
     <div className="min-h-screen  bg-[white]">
-      <AnimatePresence>
+   
 
 {isDonationPopupOpen&&
 (  
@@ -117,7 +117,7 @@ const AboutUs = () => {
 )
   
 }
-</AnimatePresence>
+
       <main className=" mx-auto ">
         <section className="text-center py-10 bg-[#f2f0ec]">
           <h1 className={`text-[50px] font-[700] text-black pt-10 mb-4 ${roboto.className}`}>

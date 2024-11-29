@@ -4,7 +4,7 @@ import { Menu, X, Heart } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation'
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from "motion/react"
 const NavBar = () => {
   const pathname = usePathname()
   console.log(pathname)
@@ -16,7 +16,7 @@ const NavBar = () => {
 
   return (
     <nav className="bg-black text-white shadow-md relative  z-50">
-       <AnimatePresence>
+      
 
 {isDonationPopupOpen&&
 (  
@@ -105,7 +105,6 @@ const NavBar = () => {
 )
   
 }
-</AnimatePresence>
 
 
       <div className="   px-5   ">
