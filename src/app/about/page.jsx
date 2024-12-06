@@ -18,7 +18,7 @@ const poppins = Poppins({
 });
 const playfair = Playfair_Display({
   subsets: ['latin'],
-  weight: ['400', '700'], 
+  weight: ['400', '700','900'], 
 });
 const AboutUs = () => {
   
@@ -120,11 +120,11 @@ const AboutUs = () => {
 
       <main className=" mx-auto ">
         <section className="text-center py-10 bg-[#f2f0ec]">
-          <h1 className={`text-[50px] font-[700] text-black pt-10 mb-4 ${roboto.className}`}>
+          <h1 className={`text-[50px] font-[700] text-black pt-10 mb-4 ${playfair.className}`}>
             Empowering Women, Nurturing Futures
           </h1>
-          <p className={`text-[30px] font-[500] text-black pb-10 mx-auto ${roboto.className}`}>
-            "Women's empowerment and child welfare"
+          <p className={`text-[30px] font-[500] text-black pb-10 mx-auto ${poppins.className}`}>
+            "WOMEN'S EMPOWERMENT AND CHILD WELFARE"
           </p>
         </section>
         <section>
@@ -188,6 +188,8 @@ const AboutUs = () => {
 
 
 
+
+
         <section className='sm:px-52 px-5 py-10'>
           <div className="flex gap-10 sm:flex-row flex-col">
             <div className='border relative h-[200px]   sm:w-[700px]'>
@@ -197,7 +199,7 @@ const AboutUs = () => {
             <div>
               <h1 className={`font-extrabold text-[50px] ${playfair.className}`}>Discover About us</h1>
               <div className={`leading-8 ${poppins.className}`}>
-              Nitya Foundation was established on dated 25th of May 2012 Under Societies Registration Act 1860. Nitya Foundation is a National level society having 80G & 12A. It was founded with the passion of “Devotion to the Nation“ and the vision of a “prosperous Nation”.
+              Sarva Prayas Samajik Sanstha was established on dated 4th of April 2023 Under Societies Registration Act 1973. It was founded with the passion of “Devotion to the Nation“ and the vision of a “prosperous Nation”.
               </div>
 
             </div>
@@ -207,7 +209,7 @@ const AboutUs = () => {
           <br />
             <br />
           <div className={`text-justify leading-7 font-[400] ${roboto.className}`}>
-          We are the best NGO in Delhi NCR, India. We endeavor for holistic growth of the Nation and its people. We are the best social organisation in Delhi NCR, India. Support by Donate to NGO or Donate in India. We mainly focused on poverty in India, Child Development, Women Empowerment, Skill Development, Education for poor & Street Children, Health programs, Environment protection, Consumer awareness, Elderly care, Rural development programs, Slum development, Donate for Livelihood, etc. Donate to India’s best NGO and support development. At Nitya, we believe that each and every person is entitled to a worthy, meaningful, and dignified life just as mentioned under Article 21 (Right to life and personal liberty) of the Indian constitution.
+          We are the best NGO in Ujjain, MP, India. We endeavor for holistic growth of the Nation and its people. We are the best social organisation in Ujjain, MP, India. Support by Donate to NGO. We mainly focused on poverty in India, Child Development, Women Empowerment, Skill Development, Education for poor & Street Children, Health programs, Environment protection, Consumer awareness, Elderly care, Rural development programs, Slum development, Donate for Livelihood, etc. Donate to India’s best NGO and support development. Sarva Prayas Samajik Sanstha, we believe that each and every person is entitled to a worthy, meaningful, and dignified life just as mentioned under Article 21 (Right to life and personal liberty) of the Indian constitution.
           <br />
           <br />
 
@@ -219,7 +221,7 @@ Thus following the words of our Honorable former President and “missile man”
 <br />
 <br />
 
-So far Nitya Foundation has been contributing all its efforts towards the fulfillment of this dream by arranging meals and tuitions for the poor and underprivileged, organizing placement link skill development programs and placements driven for youth, organizing health checkups, plantation, and environment awareness programs, conducting counseling on social issues and many more programs for the betterment of the society and nature too!
+So far Sarva Prayas Samajik Sanstha has been contributing all its efforts towards the fulfillment of this dream by arranging meals and tuitions for the poor and underprivileged, organizing placement link skill development programs and placements driven for youth, organizing health checkups, plantation, and environment awareness programs, conducting counseling on social issues and many more programs for the betterment of the society and nature too!
 <br />
 <br />
 
@@ -227,7 +229,7 @@ Our organization is dedicated to the wholesome upliftment of society, and we do 
 <br />
 <br />
 
-As the top 10 NGO and the best NGO in Delhi NCR India, we encourage everyone to join us in our efforts to make a difference. We invite you to donate to our cause, regardless of how small the amount may be. Your contribution will help us in supporting underprivileged children and bringing them a better future.
+As the top 10 NGO and the best NGO in MP, we encourage everyone to join us in our efforts to make a difference. We invite you to donate to our cause, regardless of how small the amount may be. Your contribution will help us in supporting underprivileged children and bringing them a better future.
 <br />
 <br />
 We have various social causes and activities that you can be a part of. You can donate to education, or donate for poor child education in Delhi NCR India. We also encourage you to donate to slum children, donate to poor children, and donate to old age homes.
@@ -243,21 +245,29 @@ Together, let us make a positive difference in society. Visit our website to don
 
        
 
+        <section className="bg-[#212529] bgimage py-16">
+  <h1 
+    className={`text-white text-center ${playfair.className} w-[80%] m-auto font-bold text-4xl sm:text-5xl lg:text-[70px] leading-relaxed`}
+  >
+    "Every life we touch leaves a mark of hope, compassion, and change that lasts forever."
+  </h1>
+</section>
+
 
         <section className="text-center bg-purple-100 py-12 ">
-          <h2 className="text-3xl font-bold text-green-500 mb-6">
+          <h2 className={`text-3xl font-bold text-green-500 mb-6 ${playfair.className}`}>
             Join Our Mission
           </h2>
-          <p className="text-gray-700  mb-8">
+          <p className={`text-gray-700  mb-8 ${roboto.className} text-[20px]`}>
             Your support can make a real difference. Whether through volunteering, 
             donations, or spreading awareness, you can help us create lasting change.
           </p>
           <div className="flex justify-center space-x-4">
-            <button className="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition" onClick={()=>setIsDonationPopupOpen(!isDonationPopupOpen)}>
+            <button className={`bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition ${roboto.className}`} onClick={()=>setIsDonationPopupOpen(!isDonationPopupOpen)}>
               Donate Now
             </button>
             <Link href="/join">
-            <button className="bg-white text-green-500 px-6 py-3 rounded-lg border-2 border-green-500 hover:bg-purple-50 transition">
+            <button className={`bg-white text-green-500 px-6 py-3 rounded-lg border-2 border-green-500 hover:bg-purple-50 transition ${roboto.className}`}>
               Join Us
             </button>
             </Link>

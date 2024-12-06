@@ -5,6 +5,19 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation'
 import { motion } from "motion/react"
+import { Playfair_Display, Roboto, Poppins } from 'next/font/google'
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700','900'], 
+});
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400','500','700'], 
+});
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400'], 
+});
 const NavBar = () => {
   const pathname = usePathname()
   console.log(pathname)
@@ -15,7 +28,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-black text-white shadow-md relative  z-50">
+    <nav className="bg-black text-white shadow-md relative  z-50 ">
       
 
 {isDonationPopupOpen&&
@@ -122,7 +135,7 @@ const NavBar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8 items-center">
+          <div className={`hidden md:flex space-x-8 items-center ${roboto.className}`}>
             <Link href="/" className={`  hover:text-green-600 ${
         pathname === "/" ? "text-green-600" : "text-white"}  transition duration-300 text-[18px] font-bold `}>
               Home

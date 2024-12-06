@@ -1,5 +1,19 @@
 import React from 'react';
 import { Mail, Phone } from 'lucide-react';
+import { Playfair_Display, Roboto, Poppins } from 'next/font/google'
+import Link from 'next/link';
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700','900'], 
+});
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400','500','700'], 
+});
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400'], 
+});
 
 const Header = () => {
   return (
@@ -18,23 +32,23 @@ const Header = () => {
             {/* Email */}
             <div className="flex items-center text-white font-bold">
               <Mail className="mr-2 text-green-500" />
-              <a
-                href="mailto:ngo@mail.com"
-                className="hover:text-green-500 transition-colors"
+              <Link
+                href="mailto:sarvprayassamajiksanstha@gmail.com"
+                className={`hover:text-green-500 transition-colors ${roboto.className}`}
               >
-                ngo@mail.com
-              </a>
+                sarvprayassamajiksanstha@gmail.com
+              </Link>
             </div>
 
             {/* Phone */}
             <div className="flex items-center text-white font-bold">
               <Phone className="mr-2 text-green-500" />
-              <a
-                href="tel:+918595930399"
-                className="hover:text-green-500 transition-colors"
+              <Link
+                href="tel:+91 90984 07030"
+                className={`hover:text-green-500 transition-colors ${roboto.className}`}
               >
-                +91 8595930399
-              </a>
+                +91 90984 07030
+              </Link>
             </div>
           </div>
         </div>

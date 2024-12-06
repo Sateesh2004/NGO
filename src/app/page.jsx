@@ -8,6 +8,9 @@ import ImageSlider from "@/components/Slider";
 import Counter from "@/components/Counter"
 import Image from "next/image";
 
+import { OurWorkSection } from '@/components/ourwork/section';
+import Initiatives from "@/components/initiative";
+
 export default function Home() {
  
   return (
@@ -18,6 +21,8 @@ export default function Home() {
       <br />
       <AboutSection/>
      <Counter/>
+     <Initiatives/>
+     <OurWorkSection />
     </div>
   );
 }
