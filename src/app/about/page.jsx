@@ -7,6 +7,8 @@ import { Playfair_Display,Roboto,Poppins } from 'next/font/google'
 import Link from 'next/link';
 import { useState } from 'react';
 import { motion } from "motion/react"
+import Demo from '@/components/Demo';
+import BoardMembers from '@/components/BoardMembers';
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -131,60 +133,12 @@ const AboutUs = () => {
           <Image src="/paper1.jpg" width={800} alt="Paper" className='m-auto shadow-xl shadow-black'  height={800}/>
         </section>
 
-        <section className='bg-[#424242] py-10 pb-20'>
-        <div className="font-sans">
-            <div className="max-w-4xl mx-auto">
-                <div className="text-center">
-                <h2 className={`text-white text-4xl font-extrabold text-[50px] ${playfair.className}`}>
-  Our Board Members
-</h2>                </div>
+       
 
-                <div className="grid sm:grid-cols-3 gap-8 max-sm:justify-center mt-12 max-sm:max-w-xs mx-auto">
-                    <div className="bg-gray-800 p-4 border m-auto rounded-lg">
-                     <div className='h-[250px] w-[250px] relative'>
-                        <Image src="/bm1.jpg"  layout='fill' objectFit='cover'  alt="bm1" className="w-full object-contain object-top rounded-lg" />
-                        </div>
-                        <div className="text-center mt-4">
-                            <h4 className="text-base font-semibold text-white">President</h4>
-                            <p className="text-xs mt-2 text-white">John Doe</p>
-                            <br />
-                            <hr />
-                            <br />
-                            <p className='text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, explicabo.</p>
-                        </div>
-                    </div>
 
-                    <div className="bg-gray-800 p-4 border rounded-lg">
-                    <div className='h-[250px] w-[250px] relative'>
-                        <Image src="/bm1.jpg"  layout='fill' objectFit='cover'  alt="bm1" className="w-full object-contain object-top rounded-lg" />
-                        </div>
-                        <div className="text-center mt-4">
-                            <h4 className="text-base font-semibold text-white">President</h4>
-                            <p className="text-xs mt-2 text-white">John Doe</p>
-                            <br />
-                            <hr />
-                            <br />
-                            <p className='text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, explicabo.</p>
-                        </div>
-                    </div>
 
-                    <div className="bg-gray-800 p-4 border rounded-lg">
-                    <div className='h-[250px] w-[250px] relative'>
-                        <Image src="/bm1.jpg"  layout='fill' objectFit='cover'  alt="bm1" className="w-full object-contain object-top rounded-lg" />
-                        </div>
-                        <div className="text-center mt-4">
-                            <h4 className="text-base font-semibold text-white">President</h4>
-                            <p className="text-xs mt-2 text-white">John Doe</p>
-                            <br />
-                            <hr />
-                            <br />
-                            <p className='text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, explicabo.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section>
+
+    <BoardMembers/>
 
 
 

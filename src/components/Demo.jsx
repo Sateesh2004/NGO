@@ -35,17 +35,17 @@ const BoardMembers = () => {
   ];
 
   return (
-    <div className="bg-[#424242] py-24">
+    <div className="bg-[#424242] py-12">
 <h2 className={`text-white text-center text-4xl font-extrabold text-[50px] ${playfair.className}`}>
   Our Board Members
 </h2>       
 <br />
 <br />
-  <div className="flex justify-center   gap-8 flex-wrap">
+  <div className="flex justify-center  gap-8 flex-wrap">
         {members.map((member, index) => (
           <div
             key={index}
-            className="w-72 p-6 py-8 bg-gray-800 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+            className="w-72 p-6 bg-gray-800 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
           >
             <div className="text-center">
               <img
