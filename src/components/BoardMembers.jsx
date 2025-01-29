@@ -15,23 +15,25 @@ const roboto = Roboto({
 const BoardMembers = () => {
   const members = [
     {
-      name: "John Doe",
-      designation: "CEO",
-      details: "John has 15 years of experience in leading organizations to success.",
+      name: "ज्योति शर्मा",
+      designation: "संस्थापक एवं अध्यक्ष",
       image: "/bm1.jpg"
     },
     {
-      name: "Jane Smith",
+      name: "कुमुद पायल ओझा",
       designation: "संस्थापक एवं महासचिव",
-      details: "Jane is a tech visionary with expertise in software engineering and AI.",
        image: "/bm2.jpg"
     },
     {
-      name: "Alice Johnson",
+      name: "अनिता पांड्या",
       designation: "कोषाध्यक्ष",
-      details: "Alice specializes in financial planning and has a keen eye for investments.",
        image: "/bm4.jpg"
-    }
+    },
+    {
+      name: "सीमा ओझा",
+      designation: "सहसचिव",
+       image: "/bm3.jpg"
+    },
   ];
 
   return (
@@ -57,7 +59,6 @@ const BoardMembers = () => {
               <p className="text-white font-medium mb-4">{member.designation}</p>
               <hr />
               <br />
-              <p className="text-white text-sm">{member.details}</p>
             </div>
           </div>
         ))}

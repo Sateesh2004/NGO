@@ -175,7 +175,7 @@ const Footer = () => {
                 <Facebook className="w-6 h-6" />
               </Link>
               
-              <Link href="https://www.instagram.com/sarv_prayas_samajik_sanstha/" target="_blank" className="text-gray-400 hover:text-white transition">
+              <Link href="https://www.instagram.com/sarvprayas_samajik_sanstha?igsh=aGdkdTMyN2Y4ZTlr" target="_blank" className="text-gray-400 hover:text-white transition">
                 <Instagram className="w-6 h-6" />
               </Link>
              

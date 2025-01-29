@@ -10,6 +10,7 @@ import Image from "next/image";
 
 import { OurWorkSection } from '@/components/ourwork/section';
 import Initiatives from "@/components/initiative";
+import VideoGallery from "@/components/videogallery";
 
 export default function Home() {
  
@@ -23,6 +24,8 @@ export default function Home() {
      <Counter/>
      <Initiatives/>
      <OurWorkSection />
+     <VideoGallery/>
+
     </div>
   );
 }
